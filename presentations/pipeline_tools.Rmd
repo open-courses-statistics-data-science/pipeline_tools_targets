@@ -51,11 +51,10 @@ What are the key problems for you when doing data analysis in research?
 
 ## A DAG
 
-```{r, echo = FALSE, out.width = "800px",fig.align="center"}
-  knitr::include_graphics("figures/make-research-dag.png")
-```
+[![](figures/make-research-dag.png)](https://the-turing-way.netlify.app/reproducible-research/make.html)
 
-Taken from "The Turing Way''.
+Taken from ["The Turing Way''](https://the-turing-way.netlify.app/reproducible-research/make.html).
+
 
 ## What else do they offer?
 
@@ -64,25 +63,19 @@ Taken from "The Turing Way''.
 
 ## Existing software
 
-```{r, echo = FALSE, out.width = "700px",fig.align="center"}
-  knitr::include_graphics("figures/gnu-make.png")
-```
+<a href="https://www.gnu.org/software/make/"><img src="figures/gnu-make.png" width="600" height="300" /></a>
 
 Its own language and been around a long time. It tracks changes to files based on time stamps. Can coordinate analyses across virtually any software: R, Python, Mathematica, C, bash and so on
 
 ## Existing software
 
-```{r, echo = FALSE, out.width = "600px",fig.align="center"}
-  knitr::include_graphics("figures/snakemake.jpeg")
-```
+<a href="https://snakemake.readthedocs.io/en/stable/tutorial/short.html"><img src="figures/snakemake.jpeg" width="600" height="300" /></a>
 
 Written in Python and favoured by bioinformaticians. It also tracks changes to files based on time stamps. Can coordinate analyses across virtually any software: R, Python, Mathematica, C, bash and so on
 
 ## Existing software
 
-```{r, echo = FALSE, out.width = "250px",fig.align="center"}
-  knitr::include_graphics("figures/targets.png")
-```
+<a href="https://books.ropensci.org/targets/"><img src="figures/targets.png" width="250" height="300" /></a>
 
 Written in R and only R specific. Clever way of tracking changes to files that can detect whether those changes will influence outputs. Produces really nice visualisations and is a great learning tool
 
@@ -91,7 +84,7 @@ Written in R and only R specific. Clever way of tracking changes to files that c
 
 ## Disclaimer
 
-Willfully taken and amended from the `targets` R package website! (books.ropensci.org/targets/walkthrough.html)
+Willfully taken and amended from the `targets` R package [website](https://books.ropensci.org/targets/walkthrough.html). 
 
 ## Aim: develop a model for Ozone versus temperature
 
