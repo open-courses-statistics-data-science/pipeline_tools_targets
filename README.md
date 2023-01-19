@@ -22,10 +22,11 @@ Applied example: there are two folders:
 2. install `targets` package via `install.packages("targets")`
 3. type `use_targets()` in the console, which should create an `_targets.R` file
 4. add `tidyverse` as a package under the `package` item in the `_targets.R` file
-5. comment out `tar_source`
+5. comment out `tar_source()`
 6. remove the list of example targets that have been generated in the `_targets.R` file (but keep the `list` which had these targets within it)
 7. create a folder called `scripts` that has in it a file called `clean_data.R`
 8. in `clean_data.R` write a function that takes the `data\raw\airquality.csv` file, renames the columns using only lowercase letters and removes any rows that have `NA` values in them
+9. in `_targets.R` add in the preamble `source(scripts\clean_data.R)` to ensure that `targets` has access to your function
 9. in the `_targets.R` file, add a target for the cleaned data via `tar_target(data_airquality_cleaned, clean_data(filename))`
 10. in the `_targets.R` file, create a leaf target for the file itself via `tar_target(filename, "data\raw\airquality.csv", format="file")`
 11. visualise the network via `tar_visnetwork(names=data_airquality_cleaned)`
