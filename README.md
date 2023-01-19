@@ -2,6 +2,9 @@
 
 This half-day course explains why pipeline tools such as [make](https://www.gnu.org/software/make/), [snakemake](https://snakemake.readthedocs.io/en/stable/tutorial/short.html) and [targets](https://books.ropensci.org/targets/) are indispensible tools in (reproducible) data analyses.
 
+If you have taken this course and are willing to provide a answers to a short (1-2 minute) survey, please fill these in [here](https://forms.gle/SAYMoqX6AmQBLrwNA).
+
+## Lecture and problem sets
 There is a short lecture [here](presentations/pipeline_tools.html).
 
 Applied example: there are two folders:
