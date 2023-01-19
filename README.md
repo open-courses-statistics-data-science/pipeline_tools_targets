@@ -11,14 +11,14 @@ Applied example: there are two folders:
 
 ## Steps of analysis
 
-1. Get and clean data
-2. Fit a model: `ozone ~ temperature`
-3. Plot the model's fit versus data
-4. Diagnose any issues with model fit; if necessary, change the model and rerun the above steps
+1. get and clean data
+2. fit a model: `ozone ~ temperature`
+3. plot the model's fit versus data
+4. diagnose any issues with model fit; if necessary, change the model and rerun the above steps
 
 ## Applied target steps
 
-1. clone repo and double click on the `r_project_blank_slate.Rproj` icon to launch `RStudio`
+1. clone the repo and double click on the `r_project_blank_slate.Rproj` icon to launch `RStudio`
 2. install `targets` package via `install.packages("targets")`
 3. type `use_targets()` in the console, which should create an `_targets.R` file
 4. add `tidyverse` as a package under the `package` item in the `_targets.R` file
