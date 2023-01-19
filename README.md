@@ -6,8 +6,8 @@ There is a short lecture [here](presentations/pipeline_tools.html).
 
 There are two folders:
 
-- this contains a blank R project along with the data in a subdirectory, which can be a starting point for developing a reproducible data analysis
-- this contains a completed R project along with the required `_targets.R` file 
+- [this](r_project_blank_slate/) contains a blank R project along with the data in a subdirectory, which can be a starting point for developing a reproducible data analysis
+- [this](r_project_done/) contains a completed R project along with the required `_targets.R` file 
 
 ## Prerequisites
 
