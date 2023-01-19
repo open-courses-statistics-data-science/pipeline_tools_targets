@@ -1,0 +1,10 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+clean_data|function|9b0e9c51f610982d|||||||||||||||
+data_cleaned_airquality|stem|d873d3623ee8ce0c|c4c55eb3ed91cf27|d2b5b66c6ecadfc2|898210828||t19376.5414676906s|928f28f6ec044076|1081|rds|local|vector|||0.02||
+file_graph|stem|d0d16b5c6898856c|118f61f6a4addffc|11d4869b28599b86|1235975545||t19376.5496709731s|c852eab37a726e04|78|rds|local|vector|||0.16||
+filename_airquality|stem|88a50ed27d54a87e|b8574e7cb828bf37|ef46db3751d8e999|1567659410|data/raw/airquality.csv|t19376.5376944701s|a8a2a7b43af055b8|2902|file|local|vector|||0.815||
+fit_model|function|5628543d8368c51b|||||||||||||||
+graph|stem|d4e57c962b4ec569|658c3c33dcbaa2ef|893ed5f754bbb7cb|-233210402||t19376.5487542082s|6f929dd3ec2d203e|46318|rds|local|vector|||0.016||
+model|stem|cc6f223adec28200|b29b99ebb4e868f9|9fd0872f2d712433|1816327236||t19376.5484394809s|ab2d2b4e78d7dc1d|5297|rds|local|vector|||0.005||
+model_coefficients|stem|1dd2ebea1ee6794c|b29b99ebb4e868f9|92fdfea4a3c740b6|1098879164||t19376.5462141975s|f02b269bc80ae470|129|rds|local|vector|||0.004||
+plot_model|function|ee91c227de7664d5|||||||||||||||

@@ -1,0 +1,131 @@
+---
+title: "Pipeline tools for reproducible data science"
+author: | 
+  | Ben Lambert
+output:
+  revealjs::revealjs_presentation:
+    theme: white
+    highlight: pygments
+    center: true
+    css: ['test.css','bootstrap.css','bootstrap-grid.css','bootstrap-reboot.min.css','bootstrap-grid.min.css','bootstrap.min.css','bootstrap-reboot.css']
+
+---
+
+# Difficulties with applied data science
+
+## Question
+
+What are the key problems for you when doing data analysis in research?
+
+## My problems
+
+- Coding mistakes
+- Changes to intermediate steps
+- New data arrives
+- Communicating to others
+- Communicating to myself!
+
+## Solutions?
+
+- Coding mistakes: code defensively
+- Changes to intermediate steps: have long R / bash scripts that can run things
+- New data arrives: see above
+- Communicating to others: write extensive comments and put these on the README
+- Communicating to myself!: see above
+
+## Problems with the solutions
+
+- Coding mistakes: code defensively: will always make some mistakes
+- Changes to intermediate steps: have long R / bash scripts that can run things: will potentially rerun EVERYTHING
+- New data arrives: see above
+- Communicating to others: write extensive comments and put these on the README: takes time over and above analysis
+- Communicating to myself!: see above
+
+# Pipeline tools
+
+## What are pipeline tools?
+
+- Pipeline tools are a way to write executable recipes for producing complex data analyses
+- These recipes are humanly readable and useful for communication
+- Their ultimate aim is to produce a directed acyclic graph (DAG) that shows how each output of an analysis is produced
+
+## A DAG
+
+```{r, echo = FALSE, out.width = "800px",fig.align="center"}
+  knitr::include_graphics("figures/make-research-dag.png")
+```
+
+Taken from "The Turing Way''.
+
+## What else do they offer?
+
+- The tools track changes to files (code, data etc.)
+- If a change is made to an intermediate segment of the code, when you type (something like) `make`, they only rerun downstream analyses
+
+## Existing software
+
+```{r, echo = FALSE, out.width = "700px",fig.align="center"}
+  knitr::include_graphics("figures/gnu-make.png")
+```
+
+Its own language and been around a long time. It tracks changes to files based on time stamps. Can coordinate analyses across virtually any software: R, Python, Mathematica, C, bash and so on
+
+## Existing software
+
+```{r, echo = FALSE, out.width = "600px",fig.align="center"}
+  knitr::include_graphics("figures/snakemake.jpeg")
+```
+
+Written in Python and favoured by bioinformaticians. It also tracks changes to files based on time stamps. Can coordinate analyses across virtually any software: R, Python, Mathematica, C, bash and so on
+
+## Existing software
+
+```{r, echo = FALSE, out.width = "250px",fig.align="center"}
+  knitr::include_graphics("figures/targets.png")
+```
+
+Written in R and only R specific. Clever way of tracking changes to files that can detect whether those changes will influence outputs. Produces really nice visualisations and is a great learning tool
+
+
+# An example
+
+## Disclaimer
+
+Willfully taken and amended from the `targets` R package website! (books.ropensci.org/targets/walkthrough.html)
+
+## Aim: develop a model for Ozone versus temperature
+
+```{r, echo = FALSE, warning=FALSE, message=FALSE}
+library(kableExtra)
+library(tidyverse)
+library(targets)
+
+kable(airquality[1:20, ], format="html", escape = F) %>% 
+  kable_styling() %>%
+  kableExtra::scroll_box(width = "100%", height = "400px")
+```
+
+## Steps
+
+- Get and clean data
+- Fit a model: ozone ~ temperature
+- Plot the model's fit versus data
+- Diagnose any issues with model fit and, if necessary, repeat steps above
+
+## Demonstration
+
+Go to separate repository!
+
+# Conclusion
+
+## Benefits of pipeline tools
+
+- Improved communication to others and your future self
+- Force you to write proper and clean code
+- Huge efficiency gains, particularly later on in analyses (i.e. during the crunch period)
+
+## Where to find out more
+
+- [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/make.html)
+- [Targets R package website](https://books.ropensci.org/targets/)
+
