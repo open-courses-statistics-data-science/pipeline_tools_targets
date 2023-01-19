@@ -23,7 +23,7 @@ Applied example: there are two folders:
 3. type `use_targets()` in the console, which should create an `_targets.R` file
 4. add `tidyverse` as a package under the `package` item in the `_targets.R` file
 5. comment out `tar_source`
-6. remove the list of example targets that have been generated in the `_targets.R` file (but keep the `list` which has these targets within it)
+6. remove the list of example targets that have been generated in the `_targets.R` file (but keep the `list` which had these targets within it)
 7. create a folder called `scripts` that has in it a file called `clean_data.R`
 8. in `clean_data.R` write a function that takes the `data\raw\airquality.csv` file, renames the columns using only lowercase letters and removes any rows that have `NA` values in them
 9. in the `_targets.R` file, add a target for the cleaned data via `tar_target(data_airquality_cleaned, clean_data(filename))`
