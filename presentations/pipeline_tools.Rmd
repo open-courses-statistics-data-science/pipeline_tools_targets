@@ -103,7 +103,7 @@ kable(airquality[1:20, ], format="html", escape = F) %>%
 - Get and clean data
 - Fit a model: ozone ~ temperature
 - Plot the model's fit versus data
-- Diagnose any issues with model fit and, if necessary, repeat steps above
+- Diagnose any issues with model fit; if necessary, change the model and rerun the above steps
 
 ## Demonstration
 
