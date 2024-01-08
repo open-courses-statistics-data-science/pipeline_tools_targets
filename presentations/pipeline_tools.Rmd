@@ -121,4 +121,5 @@ Go to separate repository!
 
 - [The Turing Way](https://the-turing-way.netlify.app/reproducible-research/make.html)
 - [Targets R package website](https://books.ropensci.org/targets/)
+- [OxRSE Snakemake tutorial](https://train.oxrse.uk/material/technology_and_tooling/snakemake)
 
